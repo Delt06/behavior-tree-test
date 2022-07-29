@@ -9,19 +9,16 @@ namespace GameAi
     public class CharacterBehaviorTree : BehaviorTreeBase<CharacterContext>
     {
         protected override IBehaviorTreeNode<CharacterContext> CreateTree() =>
-            Sequence(
-                new SetDirectionNode(Vector2.up),
-                Wait(1f),
-                new SetDirectionNode(Vector2.down),
-                Wait(1f),
-                Selector(
-                    Sequence(
-                        Random(0.5f),
-                        new SetDirectionNode(Vector2.right)
-                    ),
-                    new SetDirectionNode(Vector2.left)
+            Selector(
+                Sequence(
+                    new MoveTowardsClosestResourceNode(),
+                    new SetDirectionNode(Vector2.zero),
+                    Wait(1f)
                 ),
-                Wait(1f)
+                Sequence(
+                    new DebugLogNode<CharacterContext>(_ => "Finished work. Destroying..."),
+                    new DestroyCharacterNode()
+                )
             );
     }
 }
