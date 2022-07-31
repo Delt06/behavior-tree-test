@@ -1,5 +1,5 @@
-﻿using Characters;
-using DELTation.DIFramework.Systems;
+﻿using DELTation.DIFramework.Systems;
+using Game.Characters;
 
 namespace Di
 {

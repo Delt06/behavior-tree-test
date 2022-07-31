@@ -1,8 +1,8 @@
-﻿using _Shared;
-using Characters;
-using DELTation.DIFramework;
+﻿using DELTation.DIFramework;
 using DELTation.DIFramework.Containers;
-using ResourceSystem;
+using Game._Shared;
+using Game.Characters;
+using Game.ResourceSystem;
 using UnityEngine;
 
 namespace Di
