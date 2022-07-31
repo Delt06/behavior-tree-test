@@ -1,5 +1,6 @@
 ﻿using BehaviorTrees;
 using BehaviorTrees.Nodes;
+using Characters;
 using UnityEngine;
 
 namespace GameAi.Nodes

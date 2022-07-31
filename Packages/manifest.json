@@ -1,6 +1,7 @@
 {
     "dependencies": {
         "com.deltation.di-framework": "https://github.com/Delt06/di-framework.git?path=Packages/com.deltation.di-framework",
+        "com.deltation.di-systems": "https://github.com/Delt06/di-systems.git?path=Packages/com.deltation.di-systems",
         "com.unity.collab-proxy": "1.15.15",
         "com.unity.feature.2d": "1.0.0",
         "com.unity.ide.rider": "3.0.5",

@@ -1,6 +1,8 @@
 ﻿using BehaviorTrees;
 using BehaviorTrees.Nodes;
+using Characters;
 using JetBrains.Annotations;
+using ResourceSystem;
 using UnityEngine;
 
 namespace GameAi.Nodes
@@ -9,6 +11,10 @@ namespace GameAi.Nodes
     {
         [CanBeNull]
         private Resource _resource;
+        private readonly ResourceRepository _resourceRepository;
+
+        public MoveTowardsClosestResourceNode(ResourceRepository resourceRepository) =>
+            _resourceRepository = resourceRepository;
 
         public override void ResetState(CharacterContext context)
         {
@@ -25,7 +31,7 @@ namespace GameAi.Nodes
                 var minDistance = float.PositiveInfinity;
                 var closestResource = default(Resource);
 
-                foreach (var resource in context.ResourceRepository.Resources)
+                foreach (var resource in _resourceRepository.Resources)
                 {
                     var distance = Vector3.Distance(context.Movement.transform.position, resource.transform.position);
                     if (distance > minDistance) continue;

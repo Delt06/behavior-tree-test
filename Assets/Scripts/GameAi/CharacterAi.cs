@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using Characters;
+using ResourceSystem;
+using UnityEngine;
+using UnityEngine.Scripting;
 
 namespace GameAi
 {
@@ -8,9 +11,17 @@ namespace GameAi
 
         private CharacterBehaviorTree _behaviorTree;
 
+        private ResourceRepository _resourceRepository;
+
+        [Preserve]
+        public void Construct(ResourceRepository resourceRepository)
+        {
+            _resourceRepository = resourceRepository;
+        }
+
         private void Start()
         {
-            _behaviorTree = new CharacterBehaviorTree();
+            _behaviorTree = new CharacterBehaviorTree(_resourceRepository);
             _behaviorTree.Setup();
         }
 
