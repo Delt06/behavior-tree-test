@@ -45,7 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8539090376d44e6bb4fe1dddc107d0ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterModel: {fileID: 80597603677016666}
 --- !u!58 &6452129767122820112
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -159,7 +158,6 @@ GameObject:
   - component: {fileID: 6452129768427190842}
   - component: {fileID: 6452129768427190843}
   - component: {fileID: 6452129768427190844}
-  - component: {fileID: 80597603677016666}
   - component: {fileID: 8273086751209724341}
   m_Layer: 0
   m_Name: Character
@@ -247,18 +245,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 4
   _rigidbody: {fileID: 6452129768427190842}
---- !u!114 &80597603677016666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6452129768427190840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05e3518558b44e4da29d8c4cc14dffc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8273086751209724341
 MonoBehaviour:
   m_ObjectHideFlags: 0

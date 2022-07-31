@@ -13,7 +13,7 @@ namespace Characters
         {
             var gameObject = Object.Instantiate(_staticData.CharacterPrefab, position, Quaternion.identity);
             var model = new CharacterModel();
-            gameObject.GetComponent<CharacterModelRef>().Init(model);
+            gameObject.GetComponent<CharacterContext>().Init(model);
 
             var resourceViewModel = new CharacterResourceViewModel(model);
 

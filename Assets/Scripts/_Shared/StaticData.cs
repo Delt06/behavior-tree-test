@@ -6,10 +6,10 @@ namespace _Shared
     [CreateAssetMenu]
     public class StaticData : ScriptableObject
     {
-        [SerializeField] private GameObject _characterPrefab;
+        [SerializeField] private CharacterContext _characterPrefab;
         [SerializeField] private CharacterResourceView _characterResourceViewPrefab;
 
-        public GameObject CharacterPrefab => _characterPrefab;
+        public CharacterContext CharacterPrefab => _characterPrefab;
         public CharacterResourceView CharacterResourceViewPrefab => _characterResourceViewPrefab;
     }
 }
