@@ -114,3 +114,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13761ab8435847ddad3bc1dfe5bed315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _collectionTimeRange: {x: 1, y: 2}

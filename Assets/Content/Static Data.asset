@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterPrefab: {fileID: 6452129768427190845, guid: 85a89b23285a4d14da71d4dc1b4f8e44, type: 3}
   _characterResourceViewPrefab: {fileID: 6956081294377160460, guid: 79d94a53ce4bd514f9ae26b0688b2d28, type: 3}
+  _characterResourceCapacity: 2

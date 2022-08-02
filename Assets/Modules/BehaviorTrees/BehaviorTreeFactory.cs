@@ -15,6 +15,9 @@ namespace Modules.BehaviorTrees
         public static IBehaviorTreeNode<TContext> Wait(float seconds) =>
             new WaitNode<TContext>(seconds);
 
+        public static IBehaviorTreeNode<TContext> Wait(float secondsMin, float secondsMax) =>
+            new WaitNode<TContext>(secondsMin, secondsMax);
+
         public static IBehaviorTreeNode<TContext> Random(float probability) =>
             new RandomChanceNode<TContext>(probability);
     }
